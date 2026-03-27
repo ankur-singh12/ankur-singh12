@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Card</title>
+    <style>
+        /* 1. Centering the card on the whole screen */
+        body {
+            background-color: #d5e1ef; /* That soft blue background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* 2. The white card container */
+        .card {
+            background-color: white;
+            width: 320px;
+            padding: 16px;
+            border-radius: 20px; /* Rounding the corners */
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* A tiny soft shadow */
+            text-align: center;
+        }
+
+        /* 3. The blue QR code area */
+        .blue-box {
+            background-color: #2c7dfa; /* The bright blue color */
+            border-radius: 10px;
+            padding: 40px;
+            margin-bottom: 24px;
+        }
+
+        .blue-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* 4. Styling the words */
+        h2 {
+            color: #1f314f;
+            font-size: 22px;
+            margin-bottom: 16px;
+            padding: 0 10px;
+        }
+
+        p {
+            color: #7d889e;
+            font-size: 15px;
+            line-height: 1.4;
+            padding: 0 15px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="blue-box">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=HelloWorld" alt="QR Code">
+        </div>
+        
+        <h2>Improve your front-end skills by building projects</h2>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+
+</body>
+</html>
